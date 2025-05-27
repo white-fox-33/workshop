@@ -1,6 +1,5 @@
 extends Area2D
 
 func _on_body_entered(body: Node2D) -> void:
-	body.score += 1
-	print(body.score)
+	body.add_score()
 	queue_free()
